@@ -20,8 +20,8 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 */
 
 // Front End //
-Route::get('/', [AdminLoginController::class, 'index'])->name('admin-login');
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [AdminLoginController::class, 'index'])->name('admin-login');
 
 // Admin Login //
 Route::prefix('admin')->group(function () {
