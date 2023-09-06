@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/hagiaaco/portofolio-dani/
-    - export DEPLOYPATH2=/home/hagiaaco/public_html/
+    - export DEPLOYPATH2=/home/hagiaaco/portofolio-dani.hagiaa.com/
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R bootstrap $DEPLOYPATH
     - /bin/cp -R config $DEPLOYPATH
